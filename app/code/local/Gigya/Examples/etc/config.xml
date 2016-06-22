@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gigya_Examples>
+            <version>1.0.0</version>
+        </Gigya_Examples>
+    </modules>
+    <frontend>
+        <events>
+            <gigya_pre_filed_mapping>
+                <observers>
+                    <dob_convert>
+                        <type>singleton</type>
+                        <class>Gigya_Examples_Model_Customer_Observer</class>
+                        <method>convertDobFromGigya</method>
+                    </dob_convert>
+                </observers>
+            </gigya_pre_filed_mapping>
+        </events>
+    </frontend>
+    <adminhtml>
+        <events>
+            <pre_sync_to_gigya>
+                <observers>
+                    <dob_convert>
+                        <type>singleton</type>
+                        <class>Gigya_Examples_Model_Customer_Observer</class>
+                        <method>convertDobToGigya</method>
+                    </dob_convert>
+                </observers>
+            </pre_sync_to_gigya>
+        </events>
+    </adminhtml>
+</config>

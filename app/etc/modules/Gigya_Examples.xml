@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gigya_Examples>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Gigya_Examples>
+    </modules>
+</config>
