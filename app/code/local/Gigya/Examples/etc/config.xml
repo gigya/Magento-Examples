@@ -16,6 +16,15 @@
                     </dob_convert>
                 </observers>
             </gigya_pre_filed_mapping>
+            <checkout_onepage_controller_success_action>
+                <observers>
+                    <send_info_third_party>
+                        <type>singleton</type>
+                        <class>Gigya_Examples_Model_Customer_ThirdParty</class>
+                        <method>sendDsOnly</method>
+                    </send_info_third_party>
+                </observers>
+            </checkout_onepage_controller_success_action>
         </events>
     </frontend>
     <adminhtml>
