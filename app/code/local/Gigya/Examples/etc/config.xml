@@ -25,6 +25,15 @@
                     </send_info_third_party>
                 </observers>
             </checkout_onepage_controller_success_action>
+            <gigya_ds_post_fetch>
+                <observers>
+                    <boostByTwo>
+                        <type>singleton</type>
+                        <class>Gigya_Examples_Model_Customer_Ds</class>
+                        <method>boostSegmentationScore</method>
+                    </boostByTwo>
+                </observers>
+            </gigya_ds_post_fetch>
         </events>
     </frontend>
     <adminhtml>
