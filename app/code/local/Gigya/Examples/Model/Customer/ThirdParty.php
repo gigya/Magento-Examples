@@ -13,7 +13,7 @@ class Gigya_Examples_Model_Customer_ThirdParty
      * @param $observer
      *
      * This is an example of how to fetch only DS data.
-     * It fetches the data on the current user after a successful parches.
+     * It fetches the data on the current user after a successful purchase.
      */
     public function sendDsOnly($observer)
     {
